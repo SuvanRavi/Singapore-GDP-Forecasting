@@ -45,7 +45,7 @@ To develop a scalable, data-driven forecasting API that predicts Singapore’s q
 
 * No outliers were detected in the GDP value
 
-![TGDP Outlier Values](Malaysia_GDP\images\outlier.png)
+![TGDP Outlier Values](Malaysia_GDP/images/outlier.png)
 
 ### Seasonal Distribution of Singapore's GDP
 
