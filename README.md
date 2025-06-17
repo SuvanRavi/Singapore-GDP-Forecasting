@@ -39,7 +39,7 @@ To develop a scalable, data-driven forecasting API that predicts Singapore’s q
 
 ### Time-Series Line Analysis
 
-![TimeSeriesLineGraph](images/time_graph.png)
+![TimeSeriesLineGraph](Malaysia_GDP/images/time_graph.png)
 
 ### Outlier Detection
 
