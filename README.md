@@ -49,18 +49,18 @@ To develop a scalable, data-driven forecasting API that predicts Singapore’s q
 
 ### Seasonal Distribution of Singapore's GDP
 
-![Seasonal_Distribution](Malaysia_GDP\images\seasonal.png)
+![Seasonal_Distribution](Malaysia_GDP/images/seasonal.png)
 
 ### Seasonal Decomposition of Singapore's GDP
 
-![SeasonalDecomposition](Malaysia_GDP\images\timeDecomp.png)
+![SeasonalDecomposition](Malaysia_GDP/images/timeDecomp.png)
 
 ### Stationarity Testing with Augmented Dickey-Fuller (ADF) test
 
 * NULL HYPOTHESIS: The time-series data is not stationary.
 * CONCLUSION: P-Value higher than 0.05. Reject null hypothesis. Differencing must be applied
 
-![Stationarity](Malaysia_GDP\images\stationarity.png)
+![Stationarity](Malaysia_GDP/images/stationarity.png)
 
 ### Autocorrelation Function (ACF) & Partial Autocorrelation Function (PACF) Graphs
 
@@ -68,14 +68,14 @@ To develop a scalable, data-driven forecasting API that predicts Singapore’s q
 
 **Before Differencing:**
 
-![ACF_PACF_1](Malaysia_GDP\images\acf1.png)
+![ACF_PACF_1](Malaysia_GDP/images/acf1.png)
 
 * Seasonal component observed
 * Target variable needs seasonal differencing also.
 
 **After Seasonal Differencing:**
 
-![ACF_PACF_2](Malaysia_GDP\images\acf2.png)
+![ACF_PACF_2](Malaysia_GDP/images/acf2.png)
 
 EXTRACTED VALUES:
 
@@ -95,13 +95,13 @@ EXTRACTED VALUES:
 
 * CPI and RSI have insignificant correlation patterns with the target variable.
 
-![Correlation](Malaysia_GDP\images\correlation.png)
+![Correlation](Malaysia_GDP/images/correlation.png)
 
 ### Granger's Causality Test
 
 * NODX and RSI have little to no contribution to the growth trend of Singapore's GDP.
 
-![Causality](Malaysia_GDP\images\causality.png)
+![Causality](Malaysia_GDP/images/causality.png)
 
 ---
 
@@ -122,11 +122,11 @@ EXTRACTED VALUES:
 
 **BEFORE PRUNING: 313 rows**
 
-![PrePruning](Malaysia_GDP\images\prePrune.png)
+![PrePruning](Malaysia_GDP/images/prePrune.png)
 
 **AFTER PRUNING: 114 rows**
 
-![PostPruning](Malaysia_GDP\images\postPrune.png)
+![PostPruning](Malaysia_GDP/images/postPrune.png)
 
 ### Feature Engineering
 
@@ -144,7 +144,7 @@ Key engineered features include:
 * A function was created to automate the differencing process for both target and feature variables if needed.
 * Done by conducting ADF tests after differencing and observing p-value.
 
-![Differencing](Malaysia_GDP\images\differencing.png)
+![Differencing](Malaysia_GDP/images/differencing.png)
 
 
 
@@ -164,7 +164,7 @@ Machine Learning model which fits linear equation to model relationship between 
 
 **RESULTS:**
 
-![LinearRegression](Malaysia_GDP\images\regResult.png)
+![LinearRegression](Malaysia_GDP/images/regResult.png)
 
 ### SARIMAX Model (Seasonal Autoregressive Integrated Moving Average with eXogenous regressors)
 
@@ -177,7 +177,7 @@ Time-series forecasting technique which extends ARIMA model with seasonality com
 
 **RESULTS:**
 
-![SARIMAXmodel](Malaysia_GDP\images\sarimaxResults.png)
+![SARIMAXmodel](Malaysia_GDP/images/sarimaxResults.png)
 
 ### Prophet Model (by Meta)
 
@@ -190,7 +190,7 @@ Open-source time series additive model which accounts for seasonality and holida
 
 **RESULTS:**
 
-![ProphetModel](Malaysia_GDP\images\prophetResult.png)
+![ProphetModel](Malaysia_GDP/images/prophetResult.png)
 
 ### Model Evaluation
 
@@ -207,7 +207,7 @@ EVALUATION METRICES:
 
 RESULTS:
 
-![Evaluation](Malaysia_GDP\images\eval.png)
+![Evaluation](Malaysia_GDP/images/eval.png)
 
 **CONCLUSION:**  Prophet model showcases a better performance compared to the other models.
 
